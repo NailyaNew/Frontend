@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login Form</title>
+
+    <style>
+      .right {
+        position: absolute;
+        left: 50%;
+        padding-left: 20px;
+      }
+      .banner {
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: url(https://images.unsplash.com/photo-1675859203333-2560c3a8591c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=962&q=80);
+        background-position: center;
+        background-size: cover;
+        width: 50%;
+        height: 50%;
+      }
+      button {
+        background-color: blue;
+        color: aliceblue;
+        width: 100px;
+        border: none;
+        font-size: 20px;
+        border-radius: 8px;
+        padding: 10px 20px;
+      }
+      input {
+        font-size: 16px;
+        border: none;
+        background: rgb(194, 225, 255);
+        border-radius: 4px;
+        padding: 10px;
+        width: 100%;
+      }
+      a {
+        color: blue;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="banner"></div>
+
+    <div class="right">
+      <h1>Login</h1>
+      <h2>Please, enter your credentials</h2>
+
+      <form>
+        <p>
+          <input type="text" placeholder="Your login" />
+        </p>
+
+        <p>
+          <input type="password" placeholder="Your password" />
+        </p>
+        <p>
+          <button>Login</button>
+        </p>
+      </form>
+
+      <a href="https://www.google.com/?client=safari&channel=iphone_bm">Forgot your passwort?</a>
+    </div>
+  </body>
+</html>
