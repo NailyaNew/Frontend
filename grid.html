@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      * {
+        margin: 0;
+      }
+
+      html,
+      body,
+      .container {
+        height: 100%;
+      }
+      header {
+        grid-area: header;
+        background: rgba(255, 0, 0, 0.862);
+      }
+      header2 {
+        grid-area: header2;
+        background: rgba(255, 0, 0, 0.862);
+      }
+      header3 {
+        grid-area: header3;
+        background: rgba(255, 0, 0, 0.862);
+      }
+      aside {
+        grid-area: sidebar;
+        background: rgba(251, 255, 0, 0.862);
+      }
+
+      nav {
+        grid-area: nav;
+        background: rgba(0, 72, 255, 0.862);
+      }
+
+      main {
+        grid-area: main;
+        background: rgba(251, 0, 255, 0.862);
+      }
+
+      main2 {
+        grid-area: main2;
+        background: rgba(0, 255, 89, 0.862);
+      }
+      main3 {
+        grid-area: main3;
+        background: rgba(0, 255, 89, 0.862);
+      }
+      main4 {
+        grid-area: main4;
+        background: rgba(251, 0, 255, 0.862);
+      }
+
+      .container {
+        display: grid;
+        grid-template-columns: 200px 100px 100px 200px;
+        grid-template-rows: 100px 100px 100px;
+        gap: 1rem;
+        grid-template-areas:
+          "header header2 header2 header3"
+          "sidebar main main2 nav"
+          "sidebar main3 main4 nav";
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <header></header>
+      <header2></header2>
+      <header3></header3>
+      <aside></aside>
+      <nav></nav>
+      <main></main>
+      <main2></main2>
+      <main3></main3>
+      <main4></main4>
+    </div>
+  </body>
+</html>
